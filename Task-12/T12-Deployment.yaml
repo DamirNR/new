@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-microsevice-v1
+  name: dp-microsevice-v1
 spec:
   replicas: 3 
   strategy:
-    type: RollingUpdate
+    type: RollingUp
   selector:
     matchLabels:
-      app: microsevice-hello
+      app: dp-microsevice
   template:
     metadata:
       labels:
-        app: microsevice-hello
+        app: dp-microsevice
     spec:
       containers:
-      - name: hello-microsevice-v1
+      - name: dp-microsevice-v1
         image: damirnr/microsevice_v1
         ports:
         - containerPort: 8000
