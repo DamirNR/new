@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: svc-microsevice-v1-lb
+  name: svc-microsevice
 spec:
   selector:
-    env: microsevice-rs
+    env: rs-microsevice
   ports:
   - protocol: TCP
     port: 80

@@ -6,11 +6,11 @@ spec:
   replicas: 3 
   selector:
     matchLabels:
-      env: microsevice-rs
+      env: rs-microsevice
   template:
     metadata:
       labels:
-        env: microsevice-rs
+        env: rs-microsevice
     spec:
       containers:
       - name: hello-microsevice-v1
