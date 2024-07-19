@@ -3,12 +3,13 @@ kind: Ingress
 metadata:
   name: ingress-microservice
 spec:
+  ingressClassName: nginx
   rules:
-  - host: arch.homework
+  - host: otus.homework
     http:
       paths:
-      - pathType: Prefix
-        path: "/"
+      - path: "/health/"
+        pathType: Prefix
         backend:
           service:
             name: svc-microsevice
