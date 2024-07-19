@@ -13,5 +13,5 @@ spec:
         env: rs-microsevice
     spec:
       containers:
-      - name: hello-microsevice-v2
-        image: damirnr/microsevice_v2
+      - name: hello-microsevice-v3
+        image: damirnr/microsevice_v3
