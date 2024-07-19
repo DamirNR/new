@@ -3,7 +3,7 @@ kind: ReplicaSet
 metadata:
   name: rs-microsevices
 spec:
-  replicas: 3 
+  replicas: 2
   selector:
     matchLabels:
       env: rs-microsevice
